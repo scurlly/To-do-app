@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1rem;
+  color: white;
+  font-weight: 700;
+}
+
+.header-div {
+  display: flex;
+        justify-content: space-between;
+        width: 33%;
+}
+
+.box-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -10%;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 6px;
+  width: 33%;
+  padding: 20px;
+}
+
+input {
+  width: 100%;
+  flex: 1;
+  max-width: unset !important;
+  background-color: transparent;
+  border: none;
+}
+
+.center-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.card-cont {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 33%;
+  padding: 20px;
+     
+  
+}
+
+.tab-cont {
+    display: flex;
+    justify-content: space-between;
+  gap: 15px;
+  width: 33%;
+  padding: 15px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  /* Left shadow */
+  /* box-shadow: 
+    -5px 0px 10px rgba(0, 0, 0, 0.2), 
+     5px 0px 10px rgba(0, 0, 0, 0.2);  */
+}
+
+.card-cont:first-of-type {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+
+.tab-btn {
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(233, 14%, 35%);
+    border: none;
+    margin-inline: 10px;
+
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+button {
+    border: none !important;
+  box-shadow: none !important;
+  background: transparent;
+  cursor: pointer;
+}
+
+.open-tab {
+    color: hsl(220, 98%, 61%);
+}
+
+@media (max-width:1000px) {
+  .input-container,
+  .header-div,
+  .card-cont,
+  .tab-cont  {
+    width: 60%;
+  }
+
+  .box-center {
+    margin-top: -15%;
+  }
+
+}
+@media (max-width:640px) {
+  .input-container,
+  .header-div,
+  .card-cont,
+  .tab-cont  {
+    width: 90%;
+  }
+
+  .box-center {
+    margin-top: -25%;
+  }
+}
+
+@media (max-width:490px) {
+  .tabs-nav {
+    display: flex;
+  flex-direction: column;
+  }
+}
